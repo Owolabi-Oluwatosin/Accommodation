@@ -3,159 +3,85 @@ html{
 	font-family:  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Segoe UI", Roboto, "Helvetica Neue", "Lato", -apple-system, BlinkMacSystemFont, sans-serif, serif, "Times New Roman", Monospace, Times, Helvetica, Arial, cursive, fantasy;
 }
 
-* {
+*, body {
     box-sizing: border-box;
     font-size: 11px;
-    margin:0px;
-    padding:0px;
-
-}
-
-body {
-    line-height:1.6;
+    margin:0;
     padding:0;
+	line-height:1.6;
     overflow-x: hidden;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    font-family: roboto; 
 }
-
-.top-section{
-	margin:-20px auto 0 !important;
-	padding:0;
-}
-
-
-.navbar{
-	background-color: #3282b8;
-	border-radius:0;
-	margin-bottom:0;
-}
-
-.navbar-brand{
-	color:#ffffff;
-}
-
-.nav-link{
-	color:#ffffff;
-}
-
-.top-section{
-	height:45rem;
-	background-image: url(image/college.png);
-	background-position: cover;
-}
-
-.h-info, .p-info{
-	color:#ffffff;
+h1, h2, h3, h4, h5, h6{
+	font-size:3rem;
+	font-family: roboto;
+	letter-spacing:1px;
 	text-align: center;
 }
 
-.h-info{
-	padding-top:24rem;
-	font-size:30px;
-	font-family:roboto,
-	font-weight:bold;
+p, span{
+	font-size:2rem;
+	font-family: roboto;
+	letter-spacing:1px;
+	text-align: center;
 }
 
-.p-info{
-	padding-top:2rem;
-	font-size:30px;
-	font-family:roboto,
-}
-.info-h, .info-p{
-	text-align:center;
-	
+.jumbotron{
+	background-image: url(image/school-college.jpg);
+	height:48rem;
 }
 
-.info-h{
-	font-weight:bold;
-	font-size:4rem;
-}
-
-.info-p{
-	font-size:2.5rem;
-}
-
-
-.top-box{
-	width:450px;
-	margin: 6rem 35% 0;
+/* .form-inline{
 	background-color:#ffffff;
 	border-radius:4px 4px 4px 4px;
 	box-shadow:0 4px 8px 0 rgba(0,0,0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding:10px;
+} */
+
+.h-info, .p-info{
+	color:#ffffff;
 }
 
-.form{
-	width:225px;
-	height:3.5rem;
+.h-info{
+	margin-top:15rem;
+} 
+
+#inputPassword1, #submitButton{
+	margin-top:6rem;
+}
+
+#inputPassword1, #inputPassword2{
+	width: 30rem;
 	
-	margin-top:40px !important;
-	margin-left:20px !important;
 }
 
-.subscribe-input-form{
-	width:225px;
-	height:3.5rem;
-	margin-top:40px !important;
-	margin-left:20px !important;
+.info-h, .h-info{
+	font-weight:bold;
+	font-size:3rem;
 }
 
-.subscribe-input-form{
-	
+.info-p, .p-info{
+	font-size:2.5rem;
 }
 
-#row-box-1{
-	margin-top: 16rem;
-	margin-bottom:10rem;
+.card{
+	margin:20px 20px 20px 10px;
 }
 
-#row-box{
-	margin-bottom:10rem;
+#card-width{
+	width:26rem;
 }
 
-.input-text{
-	margin:25px 25px 25px 30rem;
-}
-
-.btn-primary{
-	margin:-35px 25px 25px 30rem;
-}
-
-.card-img-top{
-	border-radius:6px 6px 0 0;
-}
-
-.card-img-middle{
-	border-radius:6px 6px 6px 6px;
-}
-
-
-
-.card-img-top, .card-img-middle{
-	margin:2rem 10rem 0 20rem;
-	width:30rem;
-	height:16rem;
-}
-
-.card-body{
-	width:30rem;
-	margin:-1rem 10rem 0 20rem;
-	border-left:1px solid #f0e3ff;
-	border-right:1px solid #f0e3ff;
-	border-bottom:1px solid #f0e3ff;
-	border-top:0;
-	border-radius:0 0 6px 6px;
+img.card-img{
+	height: 12rem;
 }
 
 .card-title{
-	padding:20px 0 0 20px;
-}
-
-.card-text{
-	padding:0 0 0 20px;
+	font-size:2rem;
 }
 
 hr {
-	margin: 0 47% 0;
+	margin: 0 47% 3rem;
   border-style: solid;
   border-color: #3282b8;
   border-top-width: 5px;
@@ -165,6 +91,69 @@ hr {
   width: 5%;
 }
 
-.subscribe-row{
-	margin: 0 35% 0;
+.footer{
+	background-color:#3282b8;
+	color:#ffffff;
+	font-family:roboto;
+	font-size:5px;
+	margin:5rem auto 0;
+	padding:20px;
+	text-align:center;
+}
+
+@media screen and (max-width:776px) {
+	.card{
+	    margin:20px 20px 20px -5px;
+    }
+	
+	#card-width{
+		width:20rem;
+	}
+}
+
+@media screen and (max-width:660px) {
+	.card{
+	    margin:20px 20px 20px 45px;
+    }
+	
+	.h-info{
+	    margin-top:8rem;
+    }
+	
+	.form-inline{
+		margin-left:2rem;
+	}
+	
+	#inputPassword1, #inputPassword2{
+	    width: 18rem;
+    }
+}
+
+
+
+@media screen and (max-width:370px) {
+	.form-inline{
+		margin-left:2rem;
+	}
+	
+	
+	.jumbotron{
+		height:46rem;
+	}
+	
+	.info-h, .info-p{
+		padding:0 3rem 0;
+	}
+	
+	.card{
+	margin:20px;
+    }
+	
+	.h-info{
+	    margin-top:8rem;
+    } 
+	
+	#inputPassword1, #inputPassword2{
+	    width: 18rem;
+    }
 }
